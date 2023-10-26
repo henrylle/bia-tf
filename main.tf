@@ -22,8 +22,8 @@ resource "aws_security_group" "bia_dev" {
 
   ingress {
     description = "Liberado 3002 para o mundo"
-    from_port   = 3002
-    to_port     = 3002
+    from_port   = 3001
+    to_port     = 3001
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -46,6 +46,6 @@ resource "aws_instance" "bia-dev" {
   }
   vpc_security_group_ids = [aws_security_group.bia_dev.id]
   root_block_device {
-    volume_size = 10
+    volume_size = 12
   }
 }
