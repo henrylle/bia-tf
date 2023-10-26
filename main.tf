@@ -21,9 +21,9 @@ resource "aws_security_group" "bia_dev" {
   vpc_id      = "vpc-07400a2ed02c4aba4"
 
   ingress {
-    description = "Liberado 3001 para o mundo"
-    from_port   = 3001
-    to_port     = 3001
+    description = "Liberado 3002 para o mundo"
+    from_port   = 3002
+    to_port     = 3002
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
