@@ -1,7 +1,3 @@
-# __generated__ by Terraform
-# Please review these resources and move them into your main configuration files.
-
-# __generated__ by Terraform from "role-acesso-ssm"
 resource "aws_iam_instance_profile" "role_acesso_ssm" {
   name        = "role-acesso-ssm"
   name_prefix = null
@@ -11,7 +7,6 @@ resource "aws_iam_instance_profile" "role_acesso_ssm" {
   tags_all    = {}
 }
 
-# __generated__ by Terraform from "role-acesso-ssm"
 resource "aws_iam_role" "role_acesso_ssm" {
   assume_role_policy    = "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ec2.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}"
   description           = null
