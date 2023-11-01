@@ -50,7 +50,7 @@ resource "aws_instance" "bia-dev" {
   }
   iam_instance_profile = aws_iam_instance_profile.role_acesso_ssm.name
   user_data            = <<EOF
-  #!/bin/bash
+#!/bin/bash
 
 #Instalar Docker e Git
 sudo yum update -y
